@@ -213,3 +213,49 @@ $
     C = 4 pi epsilon_0  R_A \
   C = 4 pi epsilon_0 epsilon_r R_A
 $
+
+== 15-4 電介質的高斯定理
+
+#align(right)[
+  #image("img/10.png",width:30%)
+]
+電介質的高斯定理:
+$
+  integral.cont limits(D)^(->) d limits(S)^(->) &= Sigma q_"內"\
+  &(1)"電位移:"D=epsilon_0 epsilon_r E \
+  &(2)"真空中:"epsilon_r = 1 quad D = epsilon_0 E \
+    integral.cont epsilon_0 E d S &= Sigma q_"內" ==> "真空中:" integral.cont limits(E)^(->) d limits(S)^(->) = (Sigma q_"內")/(epsilon_0)
+    \
+$
+#align(left)[
+  例題:题1.在半径为R 的金属球之外包有一层外半径为R,的均匀电介质球壳，介质的相对介电常数为8，金属球带电O，试求:
+  (1)电介质内外的场强(2)电介质内外的电势
+]
+
+#align(right)[
+  #image("img/11.png",width:25%)
+]
+
+解:
+(1)
+$
+  integral.cont limits(D)^(->) d limits(S)^(->) = 4 dot 4pi r^2 = Sigma q_"內" \
+  ==> D= (Sigma q_"內")/(4pi r^2) \
+  ==> E = D/(epsilon_0 epsilon_r) \
+
+  cases(
+    r<R_1 "時" quad Sigma q_"內"=0 quad D=0 quad E_1 = 0 , ,
+    R_1<r<R_2 "時" quad Sigma q_"內" = Q quad D=Q/(4pi r^2) quad E_2= Q/(4pi epsilon_0 epsilon_r r^2), ,
+    R_2<r "時" quad Sigma q_"內" = Q quad D =Q/(4pi r^2) quad E_3 = Q/(4pi epsilon_0  r^2)
+  )\
+
+$
+
+(2)
+$
+  cases(
+    r < R_1 : V = integral_(R_1)^(R_2) E_2 d r + integral_(R_2)^(oo) E_3 d r = integral_(R_1)^(R_2) Q/(4pi epsilon_0 epsilon_r r^2) d r + integral_(R_2)^(oo) Q/(4pi epsilon_0  r^2) d r = Q/(4 pi epsilon_0 epsilon_r)(1/R_1-1/R_2)+Q/(4pi epsilon_0 R_2), ,
+    R_1 < r < R_2 : V = integral_r^(R_2) E_2 d r + integral_(R_2)^(oo) E_3 d r = integral_(r)^(R_2) Q/(4pi epsilon_0 epsilon_r r^2) d r + integral_(R_2)^(oo) Q/(4pi epsilon_0  r^2) d r = Q/(4 pi epsilon_0 epsilon_r)(1/r-1/R_2)+Q/(4pi epsilon_0 R_2), ,
+    R_2 < r : V = integral_r^(oo) E_3 d r =integral_(r)^(oo) Q/(4pi epsilon_0  r^2) d r = Q/(4pi epsilon_0 r)
+  )
+$
