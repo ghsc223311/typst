@@ -227,10 +227,10 @@ $
     integral.cont epsilon_0 E d S &= Sigma q_"內" ==> "真空中:" integral.cont limits(E)^(->) d limits(S)^(->) = (Sigma q_"內")/(epsilon_0)
     \
 $
-#align(left)[
+
   例題:题1.在半径为R 的金属球之外包有一层外半径为R,的均匀电介质球壳，介质的相对介电常数为8，金属球带电O，试求:
   (1)电介质内外的场强(2)电介质内外的电势
-]
+
 
 #align(right)[
   #image("img/11.png",width:25%)
@@ -259,3 +259,66 @@ $
     R_2 < r : V = integral_r^(oo) E_3 d r =integral_(r)^(oo) Q/(4pi epsilon_0  r^2) d r = Q/(4pi epsilon_0 r)
   )
 $
+
+题2.一圆柱形电容器由半径为$R_1$,的导线和与它同轴的导体圆筒构成，圆筒长为$l quad $内半径为$R_2$，
+导线与圆筒间充满相对电容率$epsilon_r quad $的电介质，设沿轴线单位长度上导线的电量为$lambda$，
+圆筒的电量为$-lambda$，略去边缘效应，求:
+
+(1)电介质中电位移D，场强 (2)两极板的电势差
+
+#align(right)[
+  #image("img/12.png",width:25%)
+]
+
+解:(1)建一個高斯面#image("img/13.png",width:20%)
+$display(integral.cont limits(D)^(->) d limits(S)^(->)=D dot 2pi r h = Sigma q_"內" ==> D = (Sigma q_"內")/(2pi r h)==> E = D /(epsilon_0 epsilon_r))$ \
+\
+$display(R_1<r<R_2 : Sigma q_"內"= lambda h )$ \
+\ 
+$display(=> D = (lambda h)/(2pi r h ) = lambda/(2pi r) ==> E = lambda/(2 pi epsilon_0 epsilon_r r ))$\
+\
+(2)$display(U_(A B) = integral_(R_1)^(R_2) E d r = integral_(R_1)^(R_2) lambda/(2 pi epsilon_0 epsilon_r r ) d r = lambda/(2pi epsilon_0 epsilon_r r) ln(R_2/R_1))$
+\
+
+\
+
+题3.静电场中，作闭合曲面S，若有$integral.cont$D·dS=0(式中D为电位移矢量)
+S内面必定(D)
+\
+A.既无自由电荷，又无束缚电荷
+
+C.自由电荷和束缚电荷的代数和为零
+
+B.没有自由电荷
+
+D.自由电荷的代数和为零
+
+解: $display(integral.cont D d S = Sigma q_"內" = 0 ==>)$ 自由电荷的代数和为零
+
+\
+
+题1.在相对电容率$epsilon_r$=4的各向同性均匀电介质中，与能量密度$w_e$=2x10“J/mN/C相应的电场强度大小E= ????? N/C。
+
+\
+
+解:
+
+公式 : 電場能密度J/$m^3$: $display(w_e = 1/2 D E = 1/2 epsilon_0 epsilon_r E^2 )$
+
+\
+電埸能:$display(W = integral_v w_e d V)$
+\
+
+電埸能:$display(W = Q^2/(2C) quad  =  1/2 C(V_1 - V_2)^2 = 1/2 Q (V_1 - V_2))$
+
+\
+
+由$display(w_e = 1/2 epsilon_0 epsilon_r E^2 ==> E = sqrt((2 w_e)/(epsilon_0 epsilon_r)) = sqrt((2 times 2 times 10^6)/(8.85 times 10^(-12) times 4)) = 3.36 times 10^8 quad )$N/C
+
+\
+
+题2.一个3$mu$F的电容被接到12V的电源，则储存在电容器中的能量为()
+
+\
+
+解: $display(3 mu F = 3 times 10^(-6) F ==> W = 1/2 C(V_1 -V_2)^2 = 1/2 times 3 times 10^(-6) times 12^2 = 2.16 times 10^(-4) quad J )$
