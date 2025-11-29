@@ -60,5 +60,91 @@ $
 
 题2.真空中,根无限长的直导线通过的电流强度为I在距离导线r处的磁感应强度为()
 
+解: 看上面的常用結論可知 $display(B = (mu_0 I)/(2pi r))$ 
+
+\
+
+#pagebreak()
+
+题3.真空中一根无限长导线弯成如图形状，设各线段都在同一平面内(纸面内)，水平部分的延长线绕过圆心O,竖直向下的导线垂直于水平方向。
+
+导线中通有电流I，求图中O 处的磁感应强度的大小和方向。
+
+#align(right)[
+  #image("img/04.png", width: 35%)
+]
+
+解:這是一個常用的結論的結合題目，可以分段看,
+
+AB和DC和O點同軸所以=0 \
+BC是一個半圓，所以B是圓形的一半$B = display((mu_0 I)/(2R_1) times 1/2)quad$ (朝內)
+\
+EF是一個$display(1/4)$的圓，所以$B =display((mu_0 I)/(2R_2) times 1/4)quad $ (朝外)
+\
+\
+DE是一段载流直导线公式是:$display((mu_0 I)/(4 pi a)  (cos theta_1 - cos theta_2))$ 
+
+所以$display(B =(mu_0 I)/(4 pi sqrt(2)R_2"/"2)  (cos pi/4 - cos 3/4 pi) = (mu_0 I)/(2pi R_2) )quad$ (朝外)
+
+
+FG是一個一半無限長載流直導線，無限長載流直導線公式是:$display(B = (mu_0 I )/(2 pi a))$
+
+所以是$display(B = (mu_0 I)/(2pi R_2)times 1/2 = (mu_0 I)/(4pi R_2 )) quad $ (朝外)
+
+
+$
+  B_"total" = B_2+B_3+B_4-B_1 = (3mu_0 I)/(4pi R_2) + (mu_0 I)/(8R_2) - (mu_0I)/(4R_1) quad ("朝外")
+$
+
+\
+\
+
+题4.如图所示,一无限长薄电流板均匀通有电流I,电流板宽为a，求在电流板同-平面内距板边为a 的
+P点处的磁感应强度。
+#align(right)[
+  #image("img/05.png",width:30%)
+]
+
+无限长窄條公式:
+$
+  B = (mu_0 I)/(2pi a)
+$
+
+在電流板上取窄條dx 
+
+窄條的電流:$display(d I = I / a dot d x ) $
+
+在點P取一坐標軸有:
+#image("img/06.png",width:35%)
+則dI在P點處產生的磁感強度為:  $display(d B =  (mu_0 d I)/(2pi(2a-x)) = (mu_0 I)/(2pi(2a-x))d x)$
+
+$
+  B = integral d B = integral_0^a (mu_0 I)/(2pi(2a-x))d x = (mu_0 I )/(2pi a)ln 2
+$
+
+方向在垂直紙面。
+
+\
+\
+
+== 16-3 安培環路定理 
+
+公式:
+$
+  integral.cont limits(B)^(->) d limits(l)^(->)  = mu_0 Sigma I_"內" \
+  B dot integral.cont d l = B dot 2pi r = mu_0 Sigma I_"內" ==> B = (mu_0 Sigma I_"內")/(2pi r)
+$
+
+\
+\
+
+题1.已知半径为R的铜线，通过电流为I,电流在导线横截面上均匀分布，求
+导线内外磁感应强度的分布?
+
+#align(right)[
+  #image("img/07.png",width:20%)
+]
+
 解:
+
 
