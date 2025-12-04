@@ -157,7 +157,7 @@ $
 
 公式:
 $
-  integral.cont limits(B)^(->) d limits(l)^(->)  = mu_0 Sigma I_"內" \
+  integral.cont limits(B)^(harpoon.rt) d limits(l)^(harpoon.rt)  = mu_0 Sigma I_"內" \
   B dot integral.cont d l = B dot 2pi r = mu_0 Sigma I_"內" ==> B = (mu_0 Sigma I_"內")/(2pi r)
 $
 

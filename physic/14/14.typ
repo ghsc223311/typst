@@ -68,13 +68,13 @@ $
 
 == 電通量
 \
-垂直時:$Phi_e = E dot S quad$ 有夾角時:$Phi_e =  dot S cos theta quad$ 曲面時:$d Phi_e = limits(E)^(->)dot d limits(S)^(->)$
+垂直時:$Phi_e = E dot S quad$ 有夾角時:$Phi_e =  dot S cos theta quad$ 曲面時:$d Phi_e = limits(E)^(harpoon.rt)dot d limits(S)^(harpoon.rt)$
 
 == 高斯定理
 \
 $
-  &Phi_e = integral.cont limits(E)^(->)dot d limits(S)^(->) = 1/epsilon_0 Sigma q_"內" \
-  &integral.cont limits(E)^(->)dot d limits(S)^(->) = E integral.cont d S = 1/epsilon_0 Sigma q_"內" \
+  &Phi_e = integral.cont limits(E)^(harpoon.rt)dot d limits(S)^(harpoon.rt) = 1/epsilon_0 Sigma q_"內" \
+  &integral.cont limits(E)^(harpoon.rt)dot d limits(S)^(harpoon.rt) = E integral.cont d S = 1/epsilon_0 Sigma q_"內" \
   & E dot 4 pi R^2 =  1/epsilon_0 Sigma q_"內"  \
   & E = (Sigma q_"內")/(4 pi R^2 epsilon_0) \
   \
@@ -89,7 +89,7 @@ $
 ]
 
 $
-  "由高斯定理可知:"&integral.cont  limits(E)^(->)dot d limits(S)^(->) = E dot 4 pi r^2 => E = (Sigma q_"內")/(4 pi epsilon_0 r^2) \
+  "由高斯定理可知:"&integral.cont  limits(E)^(harpoon.rt)dot d limits(S)^(harpoon.rt) = E dot 4 pi r^2 => E = (Sigma q_"內")/(4 pi epsilon_0 r^2) \
   "體密度:"quad &rho = q/V = q/(4/3 pi R^3) = (3q)/(4pi R^3) \
   &r < R : Sigma q_"內" = rho dot V_r =   (3q)/(4pi R^3) dot 4/3 pi R^3 =(q r^3)/R^3 \
 
@@ -111,7 +111,7 @@ $
 ]
 $
   "因為圓柱上底＝下底" => "只有側面" = 2 pi r h\
-  integral.cont limits(E)^(->)dot d limits(S)^(->) = E dot integral.cont d S = E dot 2 pi r h &= 1/epsilon_0 Sigma q_"內" \
+  integral.cont limits(E)^(harpoon.rt)dot d limits(S)^(harpoon.rt) = E dot integral.cont d S = E dot 2 pi r h &= 1/epsilon_0 Sigma q_"內" \
   ==> E &= (Sigma q_"內")/(2 pi epsilon_0 r h) \
   r < R : Sigma q_"內" &= "體密度*體積" = (lambda h)/(pi R^2 h) dot pi r^2  h = (r^2)/(R^2) dot lambda h  \
   => E &= ((r^2)/(R^2) dot lambda h)/(2 pi epsilon_0 r h) = (lambda r)/(2 pi epsilon_0 R^2)\
@@ -126,10 +126,10 @@ $
 黠電荷在電場做功與路徑無關 $==>$ 電場力是保守力 $==>$ 電势能 \
 可以定義零點為在無窮遠處 
 $
-  &==> W_M = integral_r^oo limits(F)^(->) d limits(r)^(->)= integral_r^oo q_0 limits(E)^(->) d limits(r)^(->) = integral_r^oo (q q_0)/(4pi epsilon_0 r^2) d r = (q q_0)/(4pi epsilon_0 r) \
-  &==> W_M = integral_r^oo q_0 limits(E)^(->) d limits(r)^(->) = (q q_0)/(4pi epsilon_0 r) \
-  &==> W_M/q_0 = integral_r^oo  limits(E)^(->) d limits(r)^(->) = (q)/(4pi epsilon_0 r)\
-  &==> V = integral_r^oo  limits(E)^(->) d limits(r)^(->) = (q)/(4pi epsilon_0 r)\
+  &==> W_M = integral_r^oo limits(F)^(harpoon.rt) d limits(r)^(harpoon.rt)= integral_r^oo q_0 limits(E)^(harpoon.rt) d limits(r)^(harpoon.rt) = integral_r^oo (q q_0)/(4pi epsilon_0 r^2) d r = (q q_0)/(4pi epsilon_0 r) \
+  &==> W_M = integral_r^oo q_0 limits(E)^(harpoon.rt) d limits(r)^(harpoon.rt) = (q q_0)/(4pi epsilon_0 r) \
+  &==> W_M/q_0 = integral_r^oo  limits(E)^(harpoon.rt) d limits(r)^(harpoon.rt) = (q)/(4pi epsilon_0 r)\
+  &==> V = integral_r^oo  limits(E)^(harpoon.rt) d limits(r)^(harpoon.rt) = (q)/(4pi epsilon_0 r)\
 $ \
 
 V(電势)從起點到無窮遠處作的功\
@@ -156,16 +156,16 @@ $
 分別在內和外建一個高斯面 \
 用高斯公式求一求q
 $
-  integral.cont limits(E)^(->) d limits(S)^(->) = E dot 4 pi r^2 => E &= (Sigma q)/(4 pi r^2 epsilon_0)\
+  integral.cont limits(E)^(harpoon.rt) d limits(S)^(harpoon.rt) = E dot 4 pi r^2 => E &= (Sigma q)/(4 pi r^2 epsilon_0)\
   r<R : Sigma q &= 0 => E_1 = 0 \
   r>R : Sigma q &= q => E_2 = q/(4 pi r^2 epsilon_0)\
 $
 現在是在求電势：
 $
-  r<R : V &= integral_"起點"^oo limits(E_1)^(->) d limits(l)^(->)=> integral_r^R E_1 d r + integral_R^oo E_2 d r \
+  r<R : V &= integral_"起點"^oo limits(E_1)^(harpoon.rt) d limits(l)^(harpoon.rt)=> integral_r^R E_1 d r + integral_R^oo E_2 d r \
   ==>integral_r^R 0 d r + integral_R^oo q/(4 pi r^2 epsilon_0) d r = q/(4 pi epsilon_0 R)  
   \
-  r>R : V &= integral_"起點"^oo limits(E_2)^(->) d limits(l)^(->)=> integral_r^oo E_2 d r = q/(4 pi epsilon_0 r) \
+  r>R : V &= integral_"起點"^oo limits(E_2)^(harpoon.rt) d limits(l)^(harpoon.rt)=> integral_r^oo E_2 d r = q/(4 pi epsilon_0 r) \
 $
 典型題目：求一個半徑為$R_1$和$R_2$的兩個同心球面上分別均勻帶電$q_1$和$q_2$，三個區域的電势分布：
 #align(right)[
@@ -183,7 +183,7 @@ $
 ]
 場強分布：
 $
-  integral.cont limits(E)^(->) d limits(S)^(->) = E dot 2pi r h  = (Sigma q)/epsilon_0=>E &= (Sigma q)/(2pi r h epsilon_0) \
+  integral.cont limits(E)^(harpoon.rt) d limits(S)^(harpoon.rt) = E dot 2pi r h  = (Sigma q)/epsilon_0=>E &= (Sigma q)/(2pi r h epsilon_0) \
   &r<R_1 : Sigma q = 0 => E_1 =  0 \
   R_1<&r<R_2: Sigma q = lambda h => E_2 = lambda/(2pi epsilon_0 r)\
   &r>R_2: Sigma q = lambda h - lambda h = 0 => E_3 = 0 \ 
@@ -213,11 +213,11 @@ $
 
 == 坐標形的場強和電势關係:
 $
-  limits(E)^(->) = -((partial V)/(partial x),(partial V)/(partial y),(partial V)/(partial z))\
+  limits(E)^(harpoon.rt) = -((partial V)/(partial x),(partial V)/(partial y),(partial V)/(partial z))\
 $
 例題:有xOy中，某電場電势函數$V = a(x^2+y) , a in RR$ 則場強為:
 $
   (partial V)/(partial x) = 2a x quad, quad (partial V)/(partial y) = a \
-  limits(E)^(->) = -(2a x , a)
+  limits(E)^(harpoon.rt) = -(2a x , a)
 $
 

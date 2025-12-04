@@ -144,7 +144,7 @@ $
   $+q->-q->+q$
 ]
 $
-  "電場"integral.cont limits(E)^(->) d limits(S)^(->) = E dot 4pi r^2 = 1/epsilon_0 Sigma q_"內"  ==> E = (Sigma q_"內") /(4 pi epsilon_0 r^2)\
+  "電場"integral.cont limits(E)^(harpoon.rt) d limits(S)^(harpoon.rt) = E dot 4pi r^2 = 1/epsilon_0 Sigma q_"內"  ==> E = (Sigma q_"內") /(4 pi epsilon_0 r^2)\
 $
 - $r<R_1: Sigma q = 0 quad quad ==> E_1 = 0$
 - $R_1<r<R_2: Sigma q = q quad quad ==>E_2 = q/(4 pi epsilon_0 r^2)$
@@ -221,10 +221,10 @@ $
 ]
 電介質的高斯定理:
 $
-  integral.cont limits(D)^(->) d limits(S)^(->) &= Sigma q_"內"\
+  integral.cont limits(D)^(harpoon.rt) d limits(S)^(harpoon.rt) &= Sigma q_"內"\
   &(1)"電位移:"D=epsilon_0 epsilon_r E \
   &(2)"真空中:"epsilon_r = 1 quad D = epsilon_0 E \
-    integral.cont epsilon_0 E d S &= Sigma q_"內" ==> "真空中:" integral.cont limits(E)^(->) d limits(S)^(->) = (Sigma q_"內")/(epsilon_0)
+    integral.cont epsilon_0 E d S &= Sigma q_"內" ==> "真空中:" integral.cont limits(E)^(harpoon.rt) d limits(S)^(harpoon.rt) = (Sigma q_"內")/(epsilon_0)
     \
 $
 
@@ -239,7 +239,7 @@ $
 解:
 (1)
 $
-  integral.cont limits(D)^(->) d limits(S)^(->) = 4 dot 4pi r^2 = Sigma q_"內" \
+  integral.cont limits(D)^(harpoon.rt) d limits(S)^(harpoon.rt) = 4 dot 4pi r^2 = Sigma q_"內" \
   ==> D= (Sigma q_"內")/(4pi r^2) \
   ==> E = D/(epsilon_0 epsilon_r) \
 
@@ -271,7 +271,7 @@ $
 ]
 
 解:(1)建一個高斯面#image("img/13.png",width:20%)
-$display(integral.cont limits(D)^(->) d limits(S)^(->)=D dot 2pi r h = Sigma q_"內" ==> D = (Sigma q_"內")/(2pi r h)==> E = D /(epsilon_0 epsilon_r))$ \
+$display(integral.cont limits(D)^(harpoon.rt) d limits(S)^(harpoon.rt)=D dot 2pi r h = Sigma q_"內" ==> D = (Sigma q_"內")/(2pi r h)==> E = D /(epsilon_0 epsilon_r))$ \
 \
 $display(R_1<r<R_2 : Sigma q_"內"= lambda h )$ \
 \ 
