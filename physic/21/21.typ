@@ -43,7 +43,7 @@ $
 == 21-2 洛淪茲變換
 \
 #set math.cases(reverse: false)
-洛淪茲變換$display(cases("相對性原理","光速在真空不變"))$
+洛淪茲變換$display(cases("相對性原理","光速在真空不變 , "c = 3 times 10^8" "m"/"s ))$
 
 \
 
@@ -172,4 +172,112 @@ $
   $,
 )
 
-例題;
+大題解法:
+$
+  Delta x' &= x'_2 - x'_1 = k (x_2 - v t_2) - k(x_1 - v t_1) \
+  &= k[(x_2 - x_1) - v(t_2 - t_2)]\
+  &= k(Delta x - v Delta t) \
+  \
+  Delta t' & = t'_1 - t'_2 = k (t_2  - v/c^2  x_2) - k ( t_1 - v/c^2 x_1 ) \
+  &= k[(t_2 - t_2)-  v/c^2 (x_2 - x_1)] \
+  &= k(Delta t  - v/c^2 Delta x)
+$
+
+例題:
+S'系沿x轴以 v=0.6c 相对于S系运动，
+
+在S系中相距100km的 $x_1$ 和 $x_2$ 处同时发生两件事
+
+(1)在S'系中测得这两事件时间差是多少?
+
+(2)在S'系中测得这两事件相距多远?
+
+解:
+
+(1)
+$
+  "先求k:" k = 1/sqrt(1- v^2/c^2) = 1/sqrt(1-0.36)= 1/0.8 = 10/8 = 5/4 \
+  Delta t' = t'_2 - t'_1 = k(Delta t - v/c^2 Delta x) = -2.5 times 10^(-4) " "s \
+$
+
+(2)
+$
+  Delta x' = x'_2 - x'_1 = k(Delta x - v Delta t) = 125 " "k m
+$
+
+\
+\
+\
+
+在惯性系S中，某事件A发生于$x_1$处，$2 times 10^(-6)$s后，另一事件 B 发生于 $x_2$ 处，已知$x_2 - x_1 = 300 " "m$
+
+(1)找出一个相对S系作匀速直线运动的参照系S'，在S'系中两事件发生于同一地点。
+
+(2)在S'系中，求两事件时间间隔。
+
+
+解:
+
+(1)
+$
+  Delta x' &= k (Delta x - v Delta t) = 0 \
+  0 &= 300"m"-v times 2 times 10^(-6)" s" \
+  v &= 1.5 times 10^8 " m/s"  
+$
+
+(2)
+$
+
+  Delta t' &= k(Delta t - v/c^2 Delta x) \
+  &= (Delta t - v/c^2 Delta x)/sqrt(1-v^2/c^2) = 1.73 times 10^(-6) " s"
+$
+
+
+在惯性系S’中，观察到有两个事件发生在同一个地点，其时间间隔为6.0s在另一惯性系S中两事件时间间隔为10.0s，S系相对于S'系速度为多少?
+
+解:
+(1)方法一:聯立法
+$
+  Delta x' = 0 , Delta t = 10 "s" , Delta t' = 6 "s"\ 
+  \
+$
+$
+  Delta t' = k (Delta t - v/c^2 Delta x) \
+  Delta x' = k (Delta x - v Delta t) \
+  \
+$
+
+$
+  cases(
+    display(Delta x' = 0 = k (Delta x - 10 v))
+    ,
+    display(Delta t' = 6 = k (10 - v/c^2 Delta x))
+  ) 
+  \
+$
+
+\
+
+$
+  ==>& Delta x = 10 v \
+  ==>& 6 =1/sqrt(1-v^2/c^2) dot (10 - 10 v^2/c^2) \
+  ==>& 6/10 = 3/5 = sqrt(1- v^2/c^2) \
+  ==>& 9/25 = 1 - v^2 /c^2 ==> v^2 = c^2 (16/25) \
+  ==>& v = 4/5 c = 0.8 c
+  \
+  \
+$
+
+\
+(2)逆變換
+$
+  Delta t = k (Delta t' + v/c^2 Delta x') \
+  Delta x = k (Delta x' + v Delta t') \
+  \
+  Delta t =  1/sqrt(1-v^2/c^2) dot (6 + v/c^2 times 0) \
+  sqrt(1-v^2/c^2) = 6/10 = 3/5 ==> v = 0.8 c 
+  \
+  \
+
+
+$
